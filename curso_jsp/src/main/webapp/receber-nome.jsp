@@ -7,7 +7,10 @@
 <title>Curso de JSP</title>
 </head>
 <body>
-<% out.print(request.getAttribute("nome")); %>
+
+<%@ page isErrorPage="true" %>
+
+<%= exception %>
 
 </body>
 </html>
