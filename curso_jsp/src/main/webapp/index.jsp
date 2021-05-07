@@ -10,10 +10,10 @@
 </head>
 <body>
 <H1>Bem vindo ao curso de JSP </H1>
-<%@ include file="incluir.jsp"  %>
 
-<myprefix:minhatag/>
-
+<jsp:forward page="receber-nome.jsp">
+	<jsp:param value="cursodejspavancado.com" name="paramForward" />
+</jsp:forward>
 
 </body>
 </html>
