@@ -7,7 +7,7 @@
 <title>Curso de JSP</title>
 </head>
 <body>
-<% out.print(request.getParameter("nome")); %>
-<%=session.getAttribute("curso") %>
+<% out.print(request.getAttribute("nome")); %>
+
 </body>
 </html>

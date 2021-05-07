@@ -16,14 +16,11 @@
 
 </form>
 
-<%= application.getInitParameter("estado") %><!--//context application parametro vindo do arquivo xml  -->
+<%=request.getContextPath() %>
 
-<%! public int retorna (int n){ //tag de expressão para definir funções utilizasse o !
-	return n*3;
-	
-}%>
-<%=retorna(3) %>
+<%=request.getRequestedSessionId() %>
 
-<% session.setAttribute("curso", "curso de jsp"); // setando session %> 
+<% 
+response.sendRedirect("/curso_jsp/receber-nome.jsp"); %>
 </body>
 </html>
