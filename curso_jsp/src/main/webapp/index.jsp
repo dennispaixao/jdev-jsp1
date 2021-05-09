@@ -17,9 +17,13 @@
 
 <H1>Bem vindo ao curso de JSP </H1>
 
-<form action="receber-nome.jsp" method="post">
-	<input type="text" id="nome" name="nome" value="alex">
-	<input type="submit" value="testar" />
+<form action="LoginServlet" method="post">
+	<label for="login">Login:</label> 
+	<input type="text" id="login" name="login">
+	<label for="senha">Senha:</label>
+	<input type="password" id="senha" name="senha">
+	
+	<input type="submit" value="Logar" />
 </form>
 
 
